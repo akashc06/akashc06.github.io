@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 
 	<title>Akash Chidananda Murthy</title>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon-96x96.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon-96x96.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -48,7 +48,7 @@
 	</div>
 </nav>
 
-<header>
+<header class="hidden-sm hidden-xs">
 	<div class="intro-text">
 		<div id="landing-slide" class="slide">
 			<div id="landing-overlay" class="slide">
@@ -65,6 +65,22 @@
 		</div>
 	</div>
 </header>
+
+
+
+
+<header class="visible-sm visible-xs">
+	<div style="margin-top: 100px" class="container-fluid"><img class="img-responsive center-block img-circle hvr-rotate animated pulse" width="230" height="180" src="images/my.jpg"></div>
+	<a target="_blank" href="resume.pdf" class="btn btn-xl hvr-bob animated tada">View Resume</a>
+	<div class="right-pane col-xs-12">
+		<span style="color: #fed136"> <span class="user-info typed"></span></span>
+	</div>
+</header>
+
+
+
+
+
 
 <section id="aboutme" style="padding-top: 80px;padding-bottom: 20px">
 	<div class="container-fluid">
@@ -293,20 +309,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/typed.js"></script>
 <script type="text/javascript">
-    $(window).load(function(){
-        $(".left-pane").fadeTo(2000,1).animate({
-            width:"50%",
-        }, 1000).addClass("col-md-6").removeClass("col-md-12").css("width","100%").animate({"border-right-width":"1"},2000	,function(){
-            $(".right-pane").css("height",$(".left-pane").css("height"));
-            $(".user-info").typed({
-                strings: ["<p style='font-size: 1em'>Akash Chidananda Murthy</p> <p style='font-size: 1em'>Full Stack Developer, Data Science Enthusiast</p> <p style='font-size: 1em'>Northeastern University, Boston</p>"],
-                typeSpeed: 50,
-                loop: true,
-                content:'html',
-                showCursor:false
+        $(window).load(function () {
+            $(".left-pane").fadeTo(2000, 1).animate({
+                width: "50%",
+            }, 1000).addClass("col-md-6").removeClass("col-md-12").css("width", "100%").animate({"border-right-width": "1"}, 2000, function () {
+                $(".right-pane").css("height", $(".left-pane").css("height"));
+                $(".user-info").typed({
+                    strings: ["<p style='font-size: 1em'>Akash Chidananda Murthy</p> <p style='font-size: 1em'>Full Stack Developer, Data Science Enthusiast</p> <p style='font-size: 1em'>Northeastern University, Boston</p>"],
+                    typeSpeed: 50,
+                    loop: true,
+                    content: 'html',
+                    showCursor: false
+                });
             });
         });
-    });
+
 </script>
 <script type="text/javascript">
     $(".abtme").typed({
@@ -323,6 +340,17 @@
         showCursor:false
     });
 </script>
+
+<script type="text/javascript">
+    $(".newpane").typed({
+        strings: ["<p style='font-size: 1em'>Akash Chidananda Murthy</p> <p style='font-size: 1em'>Full Stack Developer, Data Science Enthusiast</p> <p style='font-size: 1em'>Northeastern University, Boston</p>"],
+        typeSpeed: 50,
+        loop: true,
+        content: 'html',
+        showCursor: false
+    });
+</script>
+
 
 
 
